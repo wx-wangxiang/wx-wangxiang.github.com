@@ -59,12 +59,12 @@ module.exports = {
             'accessor-pairs': 2,//强制 getter 和 setter 在对象中成对出现
             'curly': [2, 'multi-line'],  //强制所有控制语句使用一致的括号风格
             'eqeqeq': 2, //要求使用 === 和 !==
-            'no-alert': 2, //禁用 Alert
+            'no-alert': 0, //禁用 Alert
             /*'no-eq-null': 2,//禁止在没有类型检查操作符的情况下与 null 进行比较*/
             'no-eval': 2, //禁用 eval()
             'no-self-assign': 2,//禁止自我赋值
             "semi": [2, "always"],//要求使用分号
-            "quotes": [2, "single", {'avoidEscape': true, 'allowTemplateLiterals': true}],//强制使用一致的单引号
+            "quotes": [0, "single", {'avoidEscape': true, 'allowTemplateLiterals': true}],//强制使用一致的单引号
             'key-spacing': [2, {'beforeColon': false, 'afterColon': true}],//禁止在对象字面量的键和值之间存在空格
             'no-mixed-spaces-and-tabs': 2,//禁止使用空格和tab
             "no-useless-escape": 0, //禁用不必要的转义字符
@@ -104,7 +104,7 @@ module.exports = {
             "asyncArrow": "never" //针对异步的箭头函数表达式
         }],
             'comma-dangle': [2, 'never'],//禁止使用拖尾逗号
-            "indent": [2, 4, {'SwitchCase': 1}],//强制使用一致的缩进 目前缩进4个空格
+            "indent": [2, 2, {'SwitchCase': 1}],//强制使用一致的缩进 目前缩进4个空格
             'padded-blocks': [2, 'never'],//代码块中避免多余留白
             'eol-last': 2,//要求文件末尾存在空行
             'no-tabs': 2,//不要使用制表符
@@ -120,7 +120,7 @@ module.exports = {
             'new-cap': [2, {'newIsCap': true, 'capIsNew': false}],//要求构造函数首字母大写
             'new-parens': 2, //要求调用无参构造函数时有圆括号
             'func-names': 0, //要求或禁止使用命名的 function 表达式
-            'func-style': 2, //强制一致地使用 function 声明或表达式
+            'func-style': 0, //强制一致地使用 function 声明或表达式
             'newline-after-var': [2, 'always'],//要求变量声明语句后有一行空行
             'no-array-constructor': 2, //使用数组字面量而不是构造器
             'no-caller': 2,//禁用 arguments.caller 或 arguments.callee
@@ -150,7 +150,7 @@ module.exports = {
             'no-duplicate-imports': 2,//同一模块有多个导入时一次性写完
             'handle-callback-err': 0,//要求回调函数中有容错处理
             'comma-style': [2, 'last'], //强制使用一致的逗号风格
-            'complexity': [2, 3], //指定程序中允许的最大环路复杂度
+            'complexity': [0, 10], //指定程序中允许的最大环路复杂度
             'computed-property-spacing': [2, 'never'],//禁止在计算的属性的方括号中使用空格
             'constructor-super': 0, //要求在构造函数中有 super() 的调用
             'no-new-require': 2,//禁止调用 require 时使用 new 操作符
